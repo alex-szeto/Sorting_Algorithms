@@ -2,8 +2,8 @@ require 'pp'
 
 def bubblesort(array)
     while !(is_sorted(array)) #Checks to see if algorithm is sorted inbetween every loop
-        array.take(array.length - 1).each_with_index{|number, index| #If not iterates
         pp array #Prints each iteration
+        array.take(array.length - 1).each_with_index{|number, index| #If not iterates
             if number > array[index + 1] #Performs swap
                 temp = array[index] 
                 array[index] = array[index + 1]
