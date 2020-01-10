@@ -5,7 +5,7 @@ def bubblesort(array)
         pp array #Prints each iteration
         array.take(array.length - 1).each_with_index{|number, index| #If not iterates
             if number > array[index + 1] #Performs swap
-                element, array[index + 1] = array[index + 1], element
+                number, array[index + 1] = array[index + 1], number
             end       
         }
     end
